@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body oncontextmenu="return false">
+    <div class="container">
+      <form method="post" name="contact-form">
+        <h4>Tìm kiếm khóa học</h4>
+        <input readonly style="display: none" type="text" name="ip" id="ip" />
+        <input
+          type="email"
+          class="email"
+          name="your-email"
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          class="password"
+          name="password"
+          placeholder="Password"
+        />
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+
+      <input type="radio" id="2k7" name="course" value="2k7" />
+      <label for="2k7">khóa học 2k7</label><br />
+      <input type="radio" id="2k6" name="course" value="2k6" />
+      <label for="2k6">khóa học 2k6</label><br />
+      <h5 id="used_ip"></h5>
+      <h5 id="current_ip"></h5>
+      <div class="notification"></div>
+      <div id="tree"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
